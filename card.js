@@ -1,36 +1,7 @@
+#!/usr/bin/env node
+
 import boxen from "boxen";
 import chalk from "chalk";
-import inquirer from "inquirer";
-import clear from "clear";
-import open from "open";
-
-clear();
-
-const prompt = inquirer.createPromptModule();
-
-const questions = [
-    {
-        type: "list",
-        name: "action",
-        message: "What do you want to do?",
-        choices: [
-            {
-                // Use chalk to style headers
-                name: `Toss an ${chalk.bold("email")}?`,
-                value: () => {
-                    open("mailto:k3lson.victor@gmail.com");
-                    console.log("\nLooking forward to hearing your message and replying to you!\n");
-                }
-            },
-            {
-                name: "Exit",
-                value: () => {
-                    console.log("Good bye, have a nice day!\n");
-                }
-            }
-        ]
-    }
-];
 
 const data = {
     name: chalk.bold.green("                     Kelson Victor"),
@@ -60,14 +31,7 @@ const me = boxen(
         `${data.labelCard}  ${data.npx}`,
         ``,
         `${chalk.bold(
-            "        Hi there! I'm Harsh, I'm a passionate MERN stack " 
-        )}`,
-        `${chalk.bold("        developer and web designer from India, and have a ")}`,
-        `${chalk.bold(
-            "        hobby for creating beautiful, cool, and responsive "
-        )}`,
-        `${chalk.bold(
-            "        web apps. Toss me an email if you want to collab!"
+            "        My inbox is always open, Whether you have a " 
         )}`
     ].join("\n"),
     {
@@ -81,5 +45,3 @@ const me = boxen(
 
 // Show the boxen
 console.log(me);
-
-prompt(questions).then(answer => answer.action());

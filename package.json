@@ -2,7 +2,17 @@
   "name": "kelsonvictor",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "kelsonvictor": "index.js"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/K3lOli/npx_card"
+  },
+  "scripts": {
+    "dev": "nodemon card.js"
+  },
   "type": "module",
   "dependencies": {
     "boxen": "^7.1.1",
@@ -14,7 +24,10 @@
   "devDependencies": {
     "nodemon": "^3.0.1"
   },
-  "scripts": {
-    "dev": "nodemon card.js"
-  }
+  "keywords": [
+    "business card",
+    "npm card",
+    "npm",
+    "npx"
+  ]
 }
