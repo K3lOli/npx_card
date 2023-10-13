@@ -1,9 +1,9 @@
 {
   "name": "kelsonvictor",
-  "version": "1.0.1",
-  "main": "index.js",
+  "version": "1.0.2",
+  "main": "card.js",
   "bin": {
-    "kelsonvictor": "index.js"
+    "kelsonvictor": "./card.js"
   },
   "license": "MIT",
   "repository": {
