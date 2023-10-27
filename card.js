@@ -31,7 +31,8 @@ const me = boxen(
         `${data.labelCard}  ${data.npx}`,
         ``,
         `${chalk.bold(
-            "        My inbox is always open, Whether you have a " 
+            "my inbox is ever open! Call me if you want talk about a job, project \n",
+            "               or just talk about berserk's manga! " 
         )}`
     ].join("\n"),
     {
